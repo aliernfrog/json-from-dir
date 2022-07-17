@@ -4,7 +4,7 @@ const core = require("@actions/core");
 const folder = core.getInput("folder");
 const output = core.getInput("output");
 
-async function main() {
+async function run() {
   try {
     const files = fs.readdirSync(folder).filter(file => file.endsWith(".json"));
     const jsonData = [];
@@ -19,4 +19,4 @@ async function main() {
   }
 }
 
-main();
+run();
