@@ -18,3 +18,5 @@ async function main() {
     core.setFailed(e.message);
   }
 }
+
+main();
