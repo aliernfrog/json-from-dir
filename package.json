@@ -1,0 +1,14 @@
+{
+  "name": "json-from-dir",
+  "version": "1.0.0",
+  "description": "Creates a JSON file from files in a folder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aliernfrog",
+  "dependencies": {
+    "@actions/core": "^1.9.0",
+    "@actions/github": "^5.0.3"
+  }
+}

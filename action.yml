@@ -1,0 +1,12 @@
+name: "JSON from dir"
+description: "Creates a JSON file from files in a folder"
+inputs:
+  folder:
+    description: "path of folder that has the files"
+    required: true
+  output:
+    description: "path of output file"
+    required: true
+runs:
+  using: "node16"
+  main: "index.js"
