@@ -12,6 +12,7 @@ async function main() {
       const content = fs.readFileSync(`${folder}/${file}`, "utf8");
       jsonData.push(JSON.parse(content));
     });
+    core.debug(JSON.stringify(jsonData, null, 1));
     fs.writeFileSync(output, JSON.stringify(jsonData, null, 1));
   } catch (e) {
     core.setFailed(e.message);
