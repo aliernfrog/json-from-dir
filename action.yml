@@ -7,6 +7,10 @@ inputs:
   output:
     description: "path of output file"
     required: true
+  indent:
+    description: "indent size for output file"
+    required: false
+    default: 2
 runs:
   using: "node16"
   main: "index.js"
