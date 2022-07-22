@@ -1,6 +1,6 @@
 {
   "name": "json-from-dir",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Creates a JSON file from files in a folder",
   "main": "index.js",
   "scripts": {
