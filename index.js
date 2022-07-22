@@ -13,7 +13,7 @@ async function run() {
       const content = fs.readFileSync(`${folder}/${file}`, "utf8");
       jsonData.push(JSON.parse(content));
     });
-    const jsonFinal = JSON.stringify(jsonData, null, indent);
+    const jsonFinal = JSON.stringify(jsonData, null, parseInt(indent));
     fs.writeFileSync(output, jsonFinal);
   } catch (e) {
     core.setFailed(e.message);
